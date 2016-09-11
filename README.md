@@ -11,6 +11,7 @@ End-goal of the project:
 NOTE: anything *in blue* is something I think might be its own method
 
 Back-End:
+
 1. Store a list of Existing Donors/RC's
   - Donor
     - Name
@@ -25,12 +26,14 @@ Back-End:
     - Location(s)
     - Email
     - Password
+
 2. Store a list of existing donations
   - Donor Info: 
     - Name, Number, Location, Hours, Email
   - Item(s)
   - Deadline for pickup
   - Special instructions
+
 3. Store a history of missed donations and confirmed pick-ups
   - Missed Donations
     - Donor
@@ -42,16 +45,20 @@ Back-End:
     - Items
     - Valuation
     - Date
+
 4. Store (temporary) number and message
     - number
     - asking_if_donor boolean
     - most recent message
+
 5. *Handle pick up text*
     - //volunteer sends confirmation text with info on items collected/pans dropped off
     - //info is updated upon reciept of this text
-4. *Handle Claim*
+
+6. *Handle Claim*
     - //RC claims food
-5. *Handle Donation*
+
+7. *Handle Donation*
   - Online
     - //food is posted online
   - Text
@@ -88,6 +95,7 @@ Back-End:
             - Replies with "I didn't understand. List donor you're with or reply with 'no'" message
             
 Front End:
+
 1. Existing Donations page
   - Display list of existing donations (see above)
     - Sort list in order of deadline, soonest first
@@ -95,6 +103,7 @@ Front End:
       - Calls *handle claim*
     - Add a donation button
       - Calls *handle donation*
+
 2. User Home Page
   - Donor
     - Info: 
@@ -118,4 +127,5 @@ Front End:
     - *Update Info* button
     - Donations recieved to date
     - Reciepts
+
 3. About us page
